@@ -9,7 +9,7 @@ async function main() {
       description: "Fullstack tutorial for GraphQL",
     },
   });
-  const allLinks = await prisma.link.findMany();
+  const allLinks = await prisma.link.findUnique();
   console.log(allLinks);
 }
 
